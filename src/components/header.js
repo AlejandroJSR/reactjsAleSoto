@@ -31,7 +31,7 @@ const Header = ({nombre, apellido, id}) => {
 
     </header>
 
-    <h2> </h2>>
+    <h2> </h2>
 
     <greeting>
 
