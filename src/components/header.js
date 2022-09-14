@@ -2,7 +2,8 @@ import React from 'react';
 import logo from '../assets/proandroid-logo.png';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import "./Header.css"
-
+import CartWidget from './CartWidget.js';
+import ItemsListContainer from './ItemsListContainer';
 
 const Header = ({nombre, apellido, id}) => {
     console.log({nombre, apellido, id});
@@ -26,13 +27,15 @@ const Header = ({nombre, apellido, id}) => {
         <li><a href="../public/index.html">Usuario</a></li></div>
     </ul>
     </nav>
-    <AddShoppingCartIcon color="sucess" fontSize="large" />
+    < CartWidget/>
 
     </header>
 
+    <h2> </h2>>
+
     <greeting>
 
-            
+
     </greeting>
     </>
     )}
