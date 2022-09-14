@@ -1,29 +1,39 @@
 import React from 'react';
 import logo from '../assets/proandroid-logo.png';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import "./Header.css"
 
-const Header = () => {
+
+const Header = ({nombre, apellido, id}) => {
+    console.log({nombre, apellido, id});
+
+
+    
     return (
     <>
-    
+    <header>
     <img src={logo} alt="logo" />  
     <h1>Proandroid</h1>
+    <h3>Bienvenido {nombre}</h3>
     <nav>
     <ul class="menu">
-        <li><a href="index.html">Inicio</a> </li>
-        <li><a href="pages/accesorios.html">Accesorios</a></li>
-        <li><a href="pages/repuestos.html">Repuestos</a></li>
-        <li> <a href="pages/mayoristas.html">Mayoristas</a> </li>
-        <li><a href="pages/nosotros.html">Nosotros</a></li>
+        <li><a href="../public/index.html">Inicio</a> </li>
+        <li><a href="../public/index.html">Accesorios</a></li>
+        <li><a href="../public/index.html">Repuestos</a></li>
+        <li> <a href="../public/index.html">Mayoristas</a> </li>
+        <li><a href="../public/index.html">Nosotros</a></li>
     <div class="usuario-menu">
-        <li><a href="pages/usuario.html">Usuario</a></li></div>
+        <li><a href="../public/index.html">Usuario</a></li></div>
     </ul>
-
-<AddShoppingCartIcon color="sucess" fontSize="large" />
-
     </nav>
+    <AddShoppingCartIcon color="sucess" fontSize="large" />
 
+    </header>
 
+    <greeting>
+
+            
+    </greeting>
     </>
     )}
 
