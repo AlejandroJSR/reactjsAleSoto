@@ -1,10 +1,18 @@
-import React, {useState} from 'react'; 
+import React, {useState,useEffect} from 'react'; 
 
 const MiComponente = () => {
 
 const [contador, setContador] = useState(0);
+const [numero, setNumero] = useState(0);
 
-let numero = 0;
+
+useEffect(() => {
+setNumero(numero +1)
+});
+
+setTimeout(() => {
+console.log("useEffect");
+},2000)
 
 const   sumar = () => {
     setContador(contador + 1);}
@@ -14,7 +22,7 @@ const   restar = () => {
 
 const   reset = () => {
     setContador(0);
-    // function();
+
 }
 
 return (
