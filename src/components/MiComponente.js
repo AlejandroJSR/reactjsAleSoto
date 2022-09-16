@@ -13,15 +13,17 @@ const   restar = () => {
     setContador(contador - 1);}
 
 const   reset = () => {
-    setContador(0);}
+    setContador(0);
+    // function();
+}
 
 return (
     <> 
     <div>Pantalla Iphone X</div>
     <h3>{contador}</h3>
-    <button onClick={sumar}>Uno mas</button>
-    <button onClick={restar}>Uno menos</button>
-    <button onClick={reset}>Reset</button>
+    <button onClick={sumar}> + 1</button>
+    <button onClick={restar}> - 1</button>
+    <button onClick={reset}>Agregar al Carrito</button>
     </>
 )
 }
