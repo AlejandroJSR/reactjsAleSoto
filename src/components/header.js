@@ -30,13 +30,6 @@ const Header = ({nombre, apellido, id}) => {
     < CartWidget/>
 
     </header>
-
-    <h2> </h2>
-
-    <greeting>
-
-
-    </greeting>
     </>
     )}
 

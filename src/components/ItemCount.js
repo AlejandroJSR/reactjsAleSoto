@@ -1,12 +1,11 @@
 import React, {useState} from 'react'; 
+import ItemListContainer from '../components/ItemsListContainer'; 
 
-const initial = "1"
-const stock = "10"
+const   ItemCount = ({initial, stock, onAdd}) => {
+    const [count, setCount] = useState(initial)
 
-const   ItemCount = () => {
-    const [count,setCount] = useState(initial)
+    
 
-    let numero = 0;
     const sumar = () => count < stock && setCount(count + 1)
     const restar = () => count > initial && setCount(count - 1)
 
@@ -17,7 +16,7 @@ return (
     <button onClick={sumar}> + 1</button>
     <button onClick={restar}> - 1</button>
     <button onClick>Agregar al Carrito</button> 
-    </>
+    </> 
 )
 }
 
