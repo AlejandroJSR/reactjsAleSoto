@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from './components/header';
 import ItemListContainer from './components/ItemsListContainer.js';
-import MiComponente from './components/MiComponente'; 
 import ItemCount from './components/ItemCount'; 
 const App = () => {
 
@@ -14,8 +13,7 @@ const App = () => {
     <>
     <Header nombre={nombre} id="1" apellido={apellido}/>
     <ItemListContainer greeting={greeting}/> 
-   {/* <MiComponente /> */}
-   <ItemCount />
+   
     </>
     
   )

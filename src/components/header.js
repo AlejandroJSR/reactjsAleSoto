@@ -17,13 +17,13 @@ const Header = ({nombre, apellido, id}) => {
     <h1>Proandroid</h1>
     <h3>Bienvenido {nombre}</h3>
     <nav>
-    <ul class="menu">
+    <ul className="menu">
         <li><a href="../public/index.html">Inicio</a> </li>
         <li><a href="../public/index.html">Accesorios</a></li>
         <li><a href="../public/index.html">Repuestos</a></li>
         <li> <a href="../public/index.html">Mayoristas</a> </li>
         <li><a href="../public/index.html">Nosotros</a></li>
-    <div class="usuario-menu">
+    <div className="usuario-menu">
         <li><a href="../public/index.html">Usuario</a></li></div>
     </ul>
     </nav>
@@ -32,5 +32,4 @@ const Header = ({nombre, apellido, id}) => {
     </header>
     </>
     )}
-
     export default Header
